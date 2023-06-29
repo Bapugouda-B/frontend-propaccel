@@ -1,0 +1,44 @@
+.nav-container{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar-link {
+text-decoration: none;
+color: inherit;
+gap: 10px;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+   
+    .nav-container{
+        max-width: 500px;
+        padding: 10px 0;
+        margin-bottom: 50px;
+    }
+    
+    .nav-container h3{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .navbar-links{
+        font-size: 10px;
+    }
+ 
+
+  }
+  

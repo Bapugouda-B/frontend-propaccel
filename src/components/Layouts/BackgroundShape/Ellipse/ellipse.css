@@ -1,0 +1,40 @@
+.matrix-container {
+  position: absolute;
+  right: 80px;
+  top: 16%;
+  display: flex;
+  justify-content: center;
+  z-index: 10px;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(9, 8px);
+  gap: 46px;
+}
+
+.ellipse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #7a3199;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .matrix-container {
+    top: 18%;
+    right: 35px;
+  }
+
+  .matrix {
+    grid-template-columns: repeat(9, 8px);
+    gap: 20px;
+    padding: 10px;
+    opacity: 0.6;
+  }
+
+  .ellipse {
+    width: 6px;
+    height: 6px;
+  }
+}
